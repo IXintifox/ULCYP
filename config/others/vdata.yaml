@@ -1,0 +1,95 @@
+task_class:
+#  normal_task: [
+#                "1A2_inhibitor", # 4   # 1A2 hAHR
+#                "2B6_inhibitor", # 5 # hPXR
+#                "2C19_inhibitor", # 6 # hCAR
+#                "2C8_inhibitor", # 7  # hAHRp
+#                "2C9_inhibitor", # 8  # hPXRp
+#                "2D6_inhibitor", # 9  # hPXRCARRp
+#                "3A4_inhibitor", # 11  # hPXRCARRp
+#  "1A2_substrate", # 7
+#  "2B6_substrate", # 8
+#  "2C19_substrate", # 9
+#  "2C8_substrate", # 10
+#  "2C9_substrate", # 11
+#  "2D6_substrate", # 12
+#  "3A4_substrate"]
+
+  pu_task: ["1A2_inducer","2B6_inducer", "2C_inducer",
+             "3A4_inducer"]
+
+  special_task: ["2D6_inducer", "712_inhibitor", # 0   # 1A2 hAHR
+    "713_inhibitor", # 1 # hPXR
+    "714_inhibitor"# 3 # hCAR
+  ]
+
+protein: [
+  "1A2", "2B6", "2C19", "2C8", "2C9", "2D6", "2E1", "3A4"
+]
+
+
+vector_bit: [
+  # Inhibitor
+  "2D6_inducer", # 0  # special_remove
+  "712_inhibitor", # 1   # 1A2 hAHR
+  "713_inhibitor", # 2 # hPXR
+  "714_inhibitor", # 3 # hCAR
+
+  "1A2_inhibitor", # 4   # 1A2 hAHR
+  "2B6_inhibitor", # 5 # hPXR
+  "2C19_inhibitor", # 6 # hCAR
+  "2C8_inhibitor", # 7  # hAHRp
+  "2C9_inhibitor", # 8  # hPXRp
+  "2D6_inhibitor", # 9  # hPXRCARRp
+  "3A4_inhibitor", # 10  # hPXRCARRp
+
+  # Substrate
+  "1A2_substrate", # 11
+  "2B6_substrate", # 16
+  "2C19_substrate", # 17
+  "2C8_substrate", # 18
+  "2C9_substrate", # 19
+  "2D6_substrate", # 20
+  "3A4_substrate", # 17
+
+    # Inducer
+  "1A2_inducer", # 18
+  "2B6_inducer", # 19
+  "2C_inducer", # 20
+  "3A4_inducer", # 21
+
+]
+
+#
+#v_bit: [
+#  # Inhibitor
+#  "2D6_inhibitor", # 5
+#  "1A2_inhibitor", # 0
+#  "2B6_inhibitor", # 1
+#  "2C19_inhibitor", # 2
+#  "2C8_inhibitor", # 3
+#  "2C9_inhibitor", # 4
+#  "2E1_inhibitor", # 6
+#  "3A4_inhibitor", # 7
+#
+#
+#  # Substrate
+##  "1A2_substrate", # 8
+##  "2B6_substrate", # 9
+##  "2C19_substrate", # 10
+##  "2C8_substrate", # 11
+##  "2C9_substrate", # 12
+##  "2D6_substrate", # 13
+##  "2E1_substrate", # 14
+##  "3A4_substrate", # 15
+#
+#  # Inducer
+##  "1A2_inducer", # 16
+##  "2B6_inducer", # 17
+##  "2C19_inducer", # 18
+##  "2C8_inducer", # 19
+##  "2C9_inducer", # 20
+##  "2D6_inducer", # 21
+##  "2E1_inducer", # 22
+##  "3A4_inducer", # 23
+#]
